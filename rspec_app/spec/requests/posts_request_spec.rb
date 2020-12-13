@@ -8,8 +8,9 @@ RSpec.describe Post, type: :model do
       @post.content = "今日も晴れです。"
       @post.save
     end
+
     it "全て入力してあるので保存される" do
       expect(@post).to be_valid
     end
-   end
   end
+end
